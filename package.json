@@ -12,7 +12,7 @@
   "scripts": {
     "test": "jest --coverage",
     "commit": "cz",
-    "build": "webpack ./src/app.js -o public/",
+    "build": "webpack ./src/app.js -o public/ --mode production",
     "preview": "webpack ./src/app.js -o public/ && webpack serve ./public/main.js --mode=development --hot",
     "prettier": "prettier -c \"src/**/*.js\"",
     "prettier:fix": "prettier -c \"src/**/*.js\" --write",
